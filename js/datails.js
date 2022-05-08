@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   document.getElementById("heroId").appendChild(heroId);
 });
 
-// parses the query string provided and returns the value
+// parses  query string provided and returns the value
 function GetQueryVariable(query, name) {
   if (query.indexOf("?") == 0) {
     query = query.substr(1);
