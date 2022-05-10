@@ -8,7 +8,7 @@ const marvel = {
     fetch(urlAPI)
       .then((res) => res.json())
       .then((json) => {
-        console.log(json, "RES.JSON");
+        //console.log(json, "RES.JSON");
         for (const hero of json.data.results) {
           let urlHero = hero.urls[0].url;
           contentHTML += ` <div class="gird-colum" onclick="getHero(event)" id=${hero.id} >
