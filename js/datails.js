@@ -2,8 +2,10 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   const queryString = document.location.search;
 
   console.log(queryString);
-
+  // ?id=1010699
   const value = GetQueryVariable(location.search, "id");
+
+  //1010699
 
   console.log(value);
 
