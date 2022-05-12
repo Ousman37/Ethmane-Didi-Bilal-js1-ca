@@ -25,7 +25,7 @@ function validateForm() {
     lastNameError.style.display = "block";
   }
 
-  if (validateEmail(email.value, 25) === true) {
+  if (validateEmail(email.value, 24) === true) {
     emailError.style.display = "none";
   } else {
     emailError.style.display = "block";

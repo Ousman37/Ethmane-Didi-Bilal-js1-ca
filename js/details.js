@@ -10,12 +10,11 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   console.log(value);
 
   const response = await fetch(
-    "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=7fa6295a3dc1ff9572b835758aa02149&hash=a4c04e8b1ff88e54d74141fe18532d5f&id=" +
-      value
+    "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=7fa6295a3dc1ff9572b835758aa02149&hash=a4c04e8b1ff88e54d74141fe18532d5f&id="
   );
 
   const result = await response.json();
-
+  console.log(result);
   const hero = result.data.results[0];
   const { name, description, id } = hero;
 

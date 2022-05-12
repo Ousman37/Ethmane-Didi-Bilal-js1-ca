@@ -19,12 +19,8 @@ const marvel = {
                                <h3 class="title">${hero.name}</h3>
                                 <p>${hero.description}</p>
                                <p>${hero.id}</p>
- 
-                              
                                <span>${hero.modified}</span>
-
-                                
-                             </div>`;
+                               </div>`;
         }
         container.innerHTML = contentHTML;
       });
